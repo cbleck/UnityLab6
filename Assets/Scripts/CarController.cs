@@ -46,11 +46,11 @@ public class CarController : MonoBehaviour {
         normalizator = Vector3.Magnitude(destPosition-startPosition);
         moving = true;
         align = true;
-        startForward = transform.forward;
+        startForward = transform.position + transform.forward*0.2f;
         startForward.y = 0;
         endForward = destPosition;
         endForward.y = 0;
 
-        rotationSpeed = 10;
+        rotationSpeed = 2;
     }
 }
